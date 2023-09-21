@@ -4,6 +4,6 @@ package guigo
 // #include "window.h"
 import "C"
 
-func helloFromC() {
+func HelloFromC() {
     C.create_window()
 }
