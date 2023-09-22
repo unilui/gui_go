@@ -13,17 +13,15 @@ gboolean on_draw(GtkWidget *widget, cairo_t *cr, gpointer data) {
     return FALSE; // We handled the draw event; no further processing needed
 }
 
-void create_window(void) {
-    gtk_init(NULL, NULL);
-
+void create_window(GtkWidget *window) {
     // Create a GTK window
-    GtkWidget *window = gtk_window_new(GTK_WINDOW_TOPLEVEL);
+    //GtkWidget *window = gtk_window_new(GTK_WINDOW_TOPLEVEL);
 
     // Set the window to be frameless
     //gtk_window_set_decorated(GTK_WINDOW(window), FALSE);
 
     // Set the window's size and position (optional)
-    gtk_window_set_default_size(GTK_WINDOW(window), 400, 400);
+    //gtk_window_set_default_size(GTK_WINDOW(window), 400, 400);
     gtk_window_set_position(GTK_WINDOW(window), GTK_WIN_POS_CENTER);
 
     // Connect the "destroy" signal to exit the application
