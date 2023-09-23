@@ -3,6 +3,6 @@
 
 #include <gtk/gtk.h>
 
-void create_window(GtkWidget *window);
+void create_window(GtkWidget *window, GtkWidget *drawing_area);
 
 #endif
